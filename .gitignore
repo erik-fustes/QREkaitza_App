@@ -1,14 +1,1 @@
-*.suo
-*.db
-*.ipch
-*.vcxproj
-/Build/*.filters
-*.user
-*.cmake
-*.bin
-*.exe
-*.obj
-*.recipe
-*.tlog
-*.lastbuildstate
-Build
+/Build
