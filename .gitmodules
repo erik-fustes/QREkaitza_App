@@ -1,0 +1,7 @@
+[submodule "TinyPngOut"]
+	path = TinyPngOut
+	url = git@github.com:TuVieja/TinyPngOut.git
+[submodule "QR-Code-generator"]
+	path = QR-Code-generator
+	url = git@github.com:TuVieja/QR-Code-generator.git
+
