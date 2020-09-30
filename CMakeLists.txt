@@ -6,5 +6,6 @@ project(QREkaitza)
 
 add_subdirectory(QREkaitza)
 add_subdirectory(QR-Code-generator)
+add_subdirectory(TinyPngOut)
 
 
