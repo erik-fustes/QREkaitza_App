@@ -4,4 +4,3 @@
 [submodule "QR-Code-generator"]
 	path = QR-Code-generator
 	url = git@github.com:TuVieja/QR-Code-generator.git
-
