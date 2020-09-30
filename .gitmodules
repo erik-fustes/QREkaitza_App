@@ -1,0 +1,6 @@
+[submodule "QREkaitza/submodules/QR-Code-Generator"]
+	path = QREkaitza/submodules/QR-Code-Generator
+	url = git@github.com:TuVieja/QR-Code-generator.git
+[submodule "QREkaitza/submodules/TinyPngOut"]
+	path = QREkaitza/submodules/TinyPngOut
+	url = git@github.com:TuVieja/TinyPngOut.git
