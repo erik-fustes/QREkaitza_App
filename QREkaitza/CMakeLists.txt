@@ -44,12 +44,11 @@ qt5_wrap_cpp(HEADERS_MOC ${MOC_HEADER_FILES})
 qt5_wrap_ui(FORM_HEADERS ${FORM_FILES})
 qt5_add_resources(RESOURCES_RCC ${QTRESOURCE_FILES})
 
-MESSAGE("${QR-CODE-GENERATOR_INCLUDE_DIR}")
-
-MESSAGE("${PROJECT_SOURCE_DIR\\QR-Code-Generator}")
-
-
 include_directories(
+		${CMAKE_CURRENT_LIST_DIR}/include
+		${CMAKE_CURRENT_LIST_DIR}/submodules/TinyPngOut/include
+		${CMAKE_CURRENT_LIST_DIR}/submodules/QR-Code-Generator/include	
+		
 )
 
 # Organize the source and header files into groups
@@ -62,6 +61,9 @@ source_group("Resource Files" FILES ${RESOURCE_FILES})
 
 # Add the executable to the project
 add_executable(${PROGRAM_NAME} ${SOURCE_FILES} ${HEADER_FILES} ${MOC_HEADER_FILES} ${FORM_HEADERS} ${HEADERS_MOC} ${RESOURCES_RCC} ${RESOURCE_FILES}) 
+# Define the include directory search file for this project
+include_directories(${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_LIST_DIR}/include)
+
 
 # Define the Qt modules used in this project
-target_link_libraries(${PROGRAM_NAME} Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Xml Qt5::Svg  QR-Code-Generator TinyPngOut )
+target_link_libraries(${PROGRAM_NAME} Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Xml Qt5::Svg   TinyPngOut QrCode)
